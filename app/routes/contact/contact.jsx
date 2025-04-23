@@ -89,10 +89,10 @@ export const Contact = () => {
       };
 
       await emailjs.send(
-        'service_3cqfs13',
-        'template_v4jikai',
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_TEMPLATE_ID,
         templateParams,
-        '_Ya88Lmr8EK5VfPFm'
+        process.env.EMAILJS_PUBLIC_KEY
       );
 
       setSuccess(true);
