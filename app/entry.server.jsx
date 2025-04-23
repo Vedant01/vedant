@@ -1,5 +1,5 @@
-import pkg from 'react-dom/server';
-const { renderToReadableStream } = pkg;
+import { renderToReadableStream } from 'react-dom/server';
+import { RemixServer } from '@remix-run/react';
 
 export default function handleRequest(
   request,
